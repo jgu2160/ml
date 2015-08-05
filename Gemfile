@@ -8,3 +8,4 @@ gem "unicorn"
 gem 'pg'
 gem "tux"
 gem "shotgun"
+gem "parallel"

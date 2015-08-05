@@ -1,4 +1,9 @@
 require 'sinatra/base'
+require 'sinatra/activerecord'
+require './config/environments'
+require './lib/helpers/ctodhelper'
+require 'benchmark'
+require 'parallel'
 require 'json'
 require 'csv'
 
@@ -9,19 +14,15 @@ class MLapp < Sinatra::Base
 
   post "/upload" do
     file = params['file']
-    file_path = file[:tempfile].path
     if file[:type] == "text/csv"
-      csv = File.foreach(file_path).first(2)
-      types = CSV.parse(csv[1], converters: :all)
-      puts csv[0]
-      types[0].each do |t|
-        puts t.class
-      end
-      puts "it's a csv!"
-      return {response: "okay"}.to_json
+      stat,bod = CtoDHelper.make_table(file)
+      status stat
+      return body bod
     else
-      status 403
-      return body 'Please upload a csv.'
+      file_path = params['file'][:tempfile].path
+      `rm #{file_path}`
+      status 404
+      return body 'Please upload a CSV.'
     end
   end
 end

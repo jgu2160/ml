@@ -1,0 +1,13 @@
+# specify which database and adapter to use for which environment
+
+development:
+  adapter: postgresql
+  database: ml-development
+
+test:
+  adapter: postgresql
+  database: ml-test
+
+production:
+  adapter: postgresql
+  database: ml-production
