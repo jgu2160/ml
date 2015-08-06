@@ -14,15 +14,8 @@ class MLapp < Sinatra::Base
 
   post "/upload" do
     file = params['file']
-    if file[:type] == "text/csv"
-      stat,bod = CtoDHelper.make_table(file)
-      status stat
-      return body bod
-    else
-      file_path = params['file'][:tempfile].path
-      `rm #{file_path}`
-      status 404
-      return body 'Please upload a CSV.'
-    end
+    stat,bod = CtoDHelper.make_table(file)
+    status stat
+    return body bod
   end
 end
