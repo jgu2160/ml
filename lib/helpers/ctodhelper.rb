@@ -22,10 +22,8 @@ class CtoDHelper
 
       Benchmark.bm do |x|
         x.report do
-
           file = File.readlines(file_path).drop(1)
-
-          #Parallel.each(file, in_processes: 1) do |line|
+          #Parallel.each(file) do |line|
           file.each do |line|
             rc.put_copy_data(line)
           end
@@ -43,7 +41,7 @@ class CtoDHelper
       end
 
       `rm #{file_path}`
-      return 200, {response: "okay"}
+      return 200, {table: table_name}.to_json
     end
 
     def get_types(row)

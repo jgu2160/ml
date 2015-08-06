@@ -203,6 +203,7 @@ $purple: #810081;
         opacity: 1; }
     .dropzone .dz-preview.dz-file-preview .dz-image {
       border-radius: 20px;
+      opacity: 0.85;
       background: $purple;
       /*background: linear-gradient(to bottom, #eee, #ddd); */
     }
@@ -352,7 +353,7 @@ $purple: #810081;
     .dropzone .dz-preview.dz-error .dz-error-message {
       display: block; }
     .dropzone .dz-preview.dz-error:hover .dz-error-message {
-      opacity: 1;
+      opacity: 0.9;
       pointer-events: auto; }
     .dropzone .dz-preview .dz-error-message {
       pointer-events: none;

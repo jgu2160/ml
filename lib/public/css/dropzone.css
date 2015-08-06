@@ -212,6 +212,7 @@
 
 .dropzone .dz-preview.dz-file-preview .dz-image {
   border-radius: 20px;
+  opacity: 0.85;
   background: #810081;
   /*background: linear-gradient(to bottom, #eee, #ddd); */ }
 
@@ -387,7 +388,7 @@
   display: block; }
 
 .dropzone .dz-preview.dz-error:hover .dz-error-message {
-  opacity: 1;
+  opacity: 0.9;
   pointer-events: auto; }
 
 .dropzone .dz-preview .dz-error-message {
