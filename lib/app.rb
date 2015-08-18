@@ -7,7 +7,7 @@ require 'parallel'
 require 'json'
 require 'csv'
 
-class MLapp < Sinatra::Base
+class Viduus < Sinatra::Base
   get "/" do
     send_file 'lib/index.html'
   end
