@@ -1,12 +1,35 @@
+$white: #EEEFF7;
+
+$aqua-blue: #92CDCF;
+$aqua-red: #cf92af;
+
+$ocean-blue: #2185C5;
+
+$graphite: #31353D;
+
+$black: #1C1D21;
+
+$ttime: 0.75s;
+$sidebar-width: 114px;
+$nav-color: lawngreen;
+
 body {
   font-family: sans-serif;
+  background-color: $white;
 }
 
-$sidebar-width: 114px;
-$nav-color: #333;
+#dash-logo, #dash-logo:hover {
+  color: $aqua-red;
+  size: 4em;
+}
 
 .inner-wrap {
   width: auto;
+}
+
+.dash-body {
+  margin-left: $sidebar-width;
+  padding: 10px;
 }
 
 .move-right .inner-wrap {
@@ -27,8 +50,9 @@ $nav-color: #333;
   -o-transform: none;
   transform: none;
   position: fixed;
-  width: 0;
+  width: 0%;
   height: 100%;
+  background: $graphite;
 }
 
 .move-right .left-off-canvas-menu {
@@ -37,6 +61,34 @@ $nav-color: #333;
 
 .move-right .exit-off-canvas {
   display: none;
+}
+
+.icon-bar {
+  background: $graphite;
+}
+
+.icon-bar > a:hover {
+  background: transparent;
+}
+
+.icon-bar > a:hover label {
+  color: $aqua-red;
+  transition: $ttime;
+}
+
+.icon-bar > a:hover i {
+  color: $aqua-red;
+  transition: $ttime;
+}
+
+.icon-bar > * i {
+  color: $aqua-blue;
+  transition: $ttime;
+}
+
+.icon-bar > * label {
+  color: $aqua-blue;
+  transition: $ttime;
 }
 
 .left-off-canvas-toggle {
@@ -53,4 +105,36 @@ $nav-color: #333;
     color: lighten($nav-color, 35%);
     transition: all .25s ease-in-out;
   }
+}
+
+
+.axis line, .axis path {
+  shape-rendering: crispEdges;
+  stroke: black;
+  fill: none;
+}
+
+.bar {
+  fill: $aqua-blue;
+  transition: 0.5s;
+}
+
+.bar:hover {
+  fill: $aqua-red;
+  transition: 0.5s;
+}
+
+.axis {
+  font: 15px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: $black;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
 }

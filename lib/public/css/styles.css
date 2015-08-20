@@ -1,8 +1,17 @@
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-color: #EEEFF7; }
+
+#dash-logo, #dash-logo:hover {
+  color: #cf92af;
+  size: 4em; }
 
 .inner-wrap {
   width: auto; }
+
+.dash-body {
+  margin-left: 114px;
+  padding: 10px; }
 
 .move-right .inner-wrap {
   -ms-transform: none;
@@ -21,8 +30,9 @@ body {
   -o-transform: none;
   transform: none;
   position: fixed;
-  width: 0;
-  height: 100%; }
+  width: 0%;
+  height: 100%;
+  background: #31353D; }
 
 .move-right .left-off-canvas-menu {
   width: 114px; }
@@ -30,17 +40,64 @@ body {
 .move-right .exit-off-canvas {
   display: none; }
 
+.icon-bar {
+  background: #31353D; }
+
+.icon-bar > a:hover {
+  background: transparent; }
+
+.icon-bar > a:hover label {
+  color: #cf92af;
+  transition: 0.75s; }
+
+.icon-bar > a:hover i {
+  color: #cf92af;
+  transition: 0.75s; }
+
+.icon-bar > * i {
+  color: #92CDCF;
+  transition: 0.75s; }
+
+.icon-bar > * label {
+  color: #92CDCF;
+  transition: 0.75s; }
+
 .left-off-canvas-toggle {
   display: none;
   margin-top: 1rem;
   margin-left: 1rem;
   font-size: 3rem;
-  color: #333;
+  color: lawngreen;
   transition: all .25s ease-in-out; }
   .left-off-canvas-toggle:focus {
-    color: #333; }
+    color: lawngreen; }
   .left-off-canvas-toggle:hover {
-    color: #8c8c8c;
+    color: #d7ffb0;
     transition: all .25s ease-in-out; }
+
+.axis line, .axis path {
+  shape-rendering: crispEdges;
+  stroke: black;
+  fill: none; }
+
+.bar {
+  fill: #92CDCF;
+  transition: 0.5s; }
+
+.bar:hover {
+  fill: #cf92af;
+  transition: 0.5s; }
+
+.axis {
+  font: 15px sans-serif; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #1C1D21;
+  shape-rendering: crispEdges; }
+
+.x.axis path {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */
