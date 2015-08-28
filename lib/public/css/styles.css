@@ -5,6 +5,11 @@ body {
 .white {
   background-color: #EEEFF7; }
 
+#slogan {
+  color: #92CDCF;
+  text-align: center;
+  margin-top: 30px; }
+
 #dash-logo, #dash-logo:hover {
   color: #cf92af;
   size: 4em; }
@@ -24,11 +29,6 @@ ul.right.button-group {
 .dash-body {
   margin-left: 114px;
   padding: 10px; }
-
-.scatter {
-  /*background-color: $white;*/
-  margin: 0 auto;
-  display: block; }
 
 .scatteraxis path,
 .scatteraxis line {
@@ -65,6 +65,19 @@ ul.right.button-group {
 
 .move-right .exit-off-canvas {
   display: none; }
+
+.navbuttons > li > a {
+  background: #31353D;
+  color: #92CDCF;
+  transition: 0.75s; }
+
+.button-group > li .button {
+  border-left: 1px solid transparent; }
+
+.navbuttons > li > a:hover {
+  background: transparent;
+  color: #cf92af;
+  transition: 0.75s; }
 
 .icon-bar {
   background: #31353D; }
@@ -126,6 +139,9 @@ ul.right.button-group {
 .x.baraxis path {
   display: none; }
 
+.large-12.columns {
+  height: 95%; }
+
 .scatteraxis path,
 .scatteraxis line {
   fill: none;
@@ -136,8 +152,11 @@ ul.right.button-group {
   stroke: transparent; }
 
 .scatter {
+  margin: 0 auto;
+  display: block;
   width: 960;
-  height: 500; }
+  height: 500;
+  margin-top: 80px; }
 
 .dropzone {
   background: #EEEFF7;

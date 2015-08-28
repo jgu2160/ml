@@ -23,6 +23,12 @@ body {
   background-color: $white;
 }
 
+#slogan {
+  color: $aqua-blue;
+  text-align: center;
+  margin-top: 30px;
+}
+
 #dash-logo, #dash-logo:hover {
   color: $aqua-red;
   size: 4em;
@@ -47,12 +53,6 @@ ul.right.button-group {
 .dash-body {
   margin-left: $sidebar-width;
   padding: 10px;
-}
-
-.scatter {
-  /*background-color: $white;*/
-  margin: 0 auto;
-  display: block;
 }
 
 .scatteraxis path,
@@ -95,6 +95,22 @@ ul.right.button-group {
 
 .move-right .exit-off-canvas {
   display: none;
+}
+
+.navbuttons > li > a {
+  background: $graphite;
+  color: $aqua-blue;
+  transition: $ttime;
+}
+
+.button-group > li .button {
+  border-left: 1px solid transparent;
+}
+
+.navbuttons > li > a:hover {
+  background: transparent;
+  color: $aqua-red;
+  transition: $ttime;
 }
 
 .icon-bar {
@@ -173,6 +189,10 @@ ul.right.button-group {
   display: none;
 }
 
+.large-12.columns {
+  height: 95%;
+}
+
 .scatteraxis path,
 .scatteraxis line {
   fill: none;
@@ -185,8 +205,11 @@ ul.right.button-group {
 }
 
 .scatter {
+  margin: 0 auto;
+  display: block;
   width: 960;
   height: 500;
+  margin-top: 80px;
 }
 
 .dropzone {
