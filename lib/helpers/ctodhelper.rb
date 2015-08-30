@@ -41,7 +41,7 @@ class CtoDHelper
       end
 
       `rm #{file_path}`
-      return 200, {table: table_name}.to_json
+      return 200, {colNames: col_names}.to_json
     end
 
     def get_types(row)

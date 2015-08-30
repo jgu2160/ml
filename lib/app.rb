@@ -14,8 +14,13 @@ class Viduus < Sinatra::Base
 
   post "/upload" do
     file = params['file']
-    stat,bod = CtoDHelper.make_table(file)
-    status stat
-    return body bod
+    begin
+      stat,bod = CtoDHelper.make_table(file)
+      status stat
+      return body bod
+    rescue
+      status 404
+      return body "Something went wrong."
+    end
   end
 end

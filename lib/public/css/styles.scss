@@ -29,6 +29,13 @@ body {
   margin-top: 30px;
 }
 
+#blurb {
+  color: $aqua-blue;
+  text-align: center;
+  margin: 80px;
+  margin-top: 30px;
+}
+
 #dash-logo, #dash-logo:hover {
   color: $aqua-red;
   size: 4em;
@@ -103,6 +110,10 @@ ul.right.button-group {
   transition: $ttime;
 }
 
+.button {
+  font-size: 1.5em;
+}
+
 .button-group > li .button {
   border-left: 1px solid transparent;
 }
@@ -111,6 +122,15 @@ ul.right.button-group {
   background: transparent;
   color: $aqua-red;
   transition: $ttime;
+}
+
+.navbuttons > li > a:focus {
+  background: transparent;
+  color: $aqua-red;
+  transition: $ttime;
+}
+
+#about {
 }
 
 .icon-bar {

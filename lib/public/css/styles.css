@@ -10,6 +10,12 @@ body {
   text-align: center;
   margin-top: 30px; }
 
+#blurb {
+  color: #92CDCF;
+  text-align: center;
+  margin: 80px;
+  margin-top: 30px; }
+
 #dash-logo, #dash-logo:hover {
   color: #cf92af;
   size: 4em; }
@@ -71,10 +77,18 @@ ul.right.button-group {
   color: #92CDCF;
   transition: 0.75s; }
 
+.button {
+  font-size: 1.5em; }
+
 .button-group > li .button {
   border-left: 1px solid transparent; }
 
 .navbuttons > li > a:hover {
+  background: transparent;
+  color: #cf92af;
+  transition: 0.75s; }
+
+.navbuttons > li > a:focus {
   background: transparent;
   color: #cf92af;
   transition: 0.75s; }
