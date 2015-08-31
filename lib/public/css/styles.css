@@ -8,13 +8,13 @@ body {
 #slogan {
   color: #92CDCF;
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 #blurb {
   color: #92CDCF;
   text-align: center;
   margin: 80px;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 #dash-logo, #dash-logo:hover {
   color: #cf92af;
@@ -170,7 +170,7 @@ ul.right.button-group {
   display: block;
   width: 960;
   height: 500;
-  margin-top: 80px; }
+  margin-top: 50px; }
 
 .dropzone {
   background: #EEEFF7;

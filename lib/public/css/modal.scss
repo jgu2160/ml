@@ -1,11 +1,22 @@
+$white: #EEEFF7;
+$aqua-blue: #92CDCF;
+$light-aqua-blue: #c7e5e6;
+$aqua-red: #cf92af;
+$ocean-blue: #2185C5;
+$graphite: #31353D;
+$black: #1C1D21;
+
 .modal-button, .modal-button:hover, .modal-button:focus {
-  background-color: #2185C5; }
+  background-color: $ocean-blue;
+}
 
 .target, .target:hover, .target:focus {
-  background-color: #cf92af; }
+  background-color: $aqua-red;
+}
 
 .predictor, .predictor:hover, .target:focus {
-  background-color: #92CDCF; }
+  background-color: $aqua-blue;
+}
 
 .modal {
   position: fixed;
@@ -21,17 +32,20 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+}
 
 .modal-dialog {
   position: relative;
-  background: #EEEFF7;
+  background: $white;
   box-shadow: 0 0 10px #888888;
-  padding: 10px;
-  width: 800px; }
+  padding:10px;
+  width:800px;
+}
 
 .modal-visible {
-  visibility: visible; }
+  visibility: visible;
+}
 
 .modal-overlay {
   position: fixed;
@@ -41,19 +55,20 @@
   top: 0;
   left: 0;
   z-index: 9;
-  opacity: 0; }
+  opacity: 0;
+}
 
-.modal-close, .modal-close:hover, .modal-close:focus {
-  color: #cf92af;
+.modal-close,.modal-close:hover,.modal-close:focus {
+  color: $aqua-red;
   font-size: 1.6em;
   font-weight: bold;
   right: 10px;
   position: absolute;
   text-decoration: none;
-  top: 5px; }
+  top: 5px;
+}
 
 .modal-visible ~ .modal-overlay {
   opacity: 1;
-  visibility: visible; }
-
-/*# sourceMappingURL=modal.css.map */
+  visibility: visible;
+}
