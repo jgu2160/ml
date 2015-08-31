@@ -213,7 +213,7 @@
 .dropzone .dz-preview.dz-file-preview .dz-image {
   border-radius: 20px;
   opacity: 0.85;
-  background: #810081;
+  background: #cf92af;
   /*background: linear-gradient(to bottom, #eee, #ddd); */ }
 
 .dropzone .dz-preview.dz-file-preview .dz-details {
@@ -372,7 +372,7 @@
 
 .dropzone .dz-preview .dz-progress .dz-upload {
   background: #333;
-  background: linear-gradient(to bottom, #666, #008141);
+  background: linear-gradient(to bottom, #92CDCF, #92CDCF);
   position: absolute;
   top: 0;
   left: 0;

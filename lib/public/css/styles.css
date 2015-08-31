@@ -263,28 +263,23 @@ ul.right.button-group {
   7% {
     opacity: 1;
     transform: rotate(300deg);
-    animation-timing-function: linear;
-    origin: 0%; }
+    animation-timing-function: linear; }
   30% {
     opacity: 1;
     transform: rotate(410deg);
-    animation-timing-function: ease-in-out;
-    origin: 7%; }
+    animation-timing-function: ease-in-out; }
   39% {
     opacity: 1;
     transform: rotate(645deg);
-    animation-timing-function: linear;
-    origin: 30%; }
+    animation-timing-function: linear; }
   70% {
     opacity: 1;
     transform: rotate(770deg);
-    animation-timing-function: ease-out;
-    origin: 39%; }
+    animation-timing-function: ease-out; }
   75% {
     opacity: 1;
     transform: rotate(900deg);
-    animation-timing-function: ease-out;
-    origin: 70%; }
+    animation-timing-function: ease-out; }
   76% {
     opacity: 0;
     transform: rotate(900deg); }
@@ -411,28 +406,23 @@ ul.right.button-group {
   7% {
     opacity: 1;
     -moz-transform: rotate(300deg);
-    -moz-animation-timing-function: linear;
-    -moz-origin: 0%; }
+    -moz-animation-timing-function: linear; }
   30% {
     opacity: 1;
     -moz-transform: rotate(410deg);
-    -moz-animation-timing-function: ease-in-out;
-    -moz-origin: 7%; }
+    -moz-animation-timing-function: ease-in-out; }
   39% {
     opacity: 1;
     -moz-transform: rotate(645deg);
-    -moz-animation-timing-function: linear;
-    -moz-origin: 30%; }
+    -moz-animation-timing-function: linear; }
   70% {
     opacity: 1;
     -moz-transform: rotate(770deg);
-    -moz-animation-timing-function: ease-out;
-    -moz-origin: 39%; }
+    -moz-animation-timing-function: ease-out; }
   75% {
     opacity: 1;
     -moz-transform: rotate(900deg);
-    -moz-animation-timing-function: ease-out;
-    -moz-origin: 70%; }
+    -moz-animation-timing-function: ease-out; }
   76% {
     opacity: 0;
     -moz-transform: rotate(900deg); }

@@ -1,5 +1,5 @@
-$green: #008141;
-$purple: #810081;
+$progress-bar: #92CDCF;
+$folder-color: #cf92af;
 @-webkit-keyframes passing-through {
   0% {
     opacity: 0;
@@ -204,7 +204,7 @@ $purple: #810081;
     .dropzone .dz-preview.dz-file-preview .dz-image {
       border-radius: 20px;
       opacity: 0.85;
-      background: $purple;
+      background: $folder-color;
       /*background: linear-gradient(to bottom, #eee, #ddd); */
     }
     .dropzone .dz-preview.dz-file-preview .dz-details {
@@ -339,7 +339,7 @@ $purple: #810081;
       overflow: hidden; }
       .dropzone .dz-preview .dz-progress .dz-upload {
         background: #333;
-        background: linear-gradient(to bottom, #666, $green);
+        background: linear-gradient(to bottom, $progress-bar, $progress-bar);
         position: absolute;
         top: 0;
         left: 0;
