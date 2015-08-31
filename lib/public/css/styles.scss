@@ -11,7 +11,7 @@ $graphite: #31353D;
 $black: #1C1D21;
 
 $ttime: 0.75s;
-$sidebar-width: 114px;
+$sidebar-width: 120px;
 $nav-color: lawngreen;
 
 body {
@@ -21,6 +21,24 @@ body {
 
 .white {
   background-color: $white;
+}
+
+.front-page-icon {
+  font-size: 7em;
+  color: $aqua-red;
+}
+
+.front-info {
+  text-align: center;
+}
+
+.front-info > p {
+  color: $aqua-blue !important;
+  text-align: justify;
+}
+
+.aqua-blue {
+  color: $aqua-blue !important;
 }
 
 #slogan {

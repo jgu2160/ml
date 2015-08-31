@@ -7,7 +7,7 @@ $graphite: #31353D;
 $black: #1C1D21;
 
 .modal-button, .modal-button:hover, .modal-button:focus {
-  background-color: $ocean-blue;
+  background-color: $graphite;
 }
 
 .target, .target:hover, .target:focus {
@@ -59,7 +59,7 @@ $black: #1C1D21;
 }
 
 .modal-close,.modal-close:hover,.modal-close:focus {
-  color: $aqua-red;
+  color: $graphite;
   font-size: 1.6em;
   font-weight: bold;
   right: 10px;
@@ -71,4 +71,8 @@ $black: #1C1D21;
 .modal-visible ~ .modal-overlay {
   opacity: 1;
   visibility: visible;
+}
+
+#selectorButton {
+  display: none;
 }

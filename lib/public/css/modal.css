@@ -1,5 +1,5 @@
 .modal-button, .modal-button:hover, .modal-button:focus {
-  background-color: #2185C5; }
+  background-color: #31353D; }
 
 .target, .target:hover, .target:focus {
   background-color: #cf92af; }
@@ -44,7 +44,7 @@
   opacity: 0; }
 
 .modal-close, .modal-close:hover, .modal-close:focus {
-  color: #cf92af;
+  color: #31353D;
   font-size: 1.6em;
   font-weight: bold;
   right: 10px;
@@ -55,5 +55,8 @@
 .modal-visible ~ .modal-overlay {
   opacity: 1;
   visibility: visible; }
+
+#selectorButton {
+  display: none; }
 
 /*# sourceMappingURL=modal.css.map */

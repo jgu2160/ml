@@ -5,6 +5,20 @@ body {
 .white {
   background-color: #EEEFF7; }
 
+.front-page-icon {
+  font-size: 7em;
+  color: #cf92af; }
+
+.front-info {
+  text-align: center; }
+
+.front-info > p {
+  color: #92CDCF !important;
+  text-align: justify; }
+
+.aqua-blue {
+  color: #92CDCF !important; }
+
 #slogan {
   color: #92CDCF;
   text-align: center;
@@ -33,7 +47,7 @@ ul.right.button-group {
   width: auto; }
 
 .dash-body {
-  margin-left: 114px;
+  margin-left: 120px;
   padding: 10px; }
 
 .scatteraxis path,
@@ -52,7 +66,7 @@ ul.right.button-group {
   -ms-transform: none;
   -o-transform: none;
   transform: none;
-  margin-left: 114px; }
+  margin-left: 120px; }
 
 .left-off-canvas-menu {
   -ms-transform: none;
@@ -67,7 +81,7 @@ ul.right.button-group {
   background: #31353D; }
 
 .move-right .left-off-canvas-menu {
-  width: 114px; }
+  width: 120px; }
 
 .move-right .exit-off-canvas {
   display: none; }
